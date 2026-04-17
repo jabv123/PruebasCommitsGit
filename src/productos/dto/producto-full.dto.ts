@@ -19,7 +19,8 @@ export class ProductoDetalleDto {
   inventario?: InventarioEntity;
 
   @ApiProperty({
-    description: 'Valor total en inventario calculado como precio x stock',
+    description:
+      'Valor total en inventario calculado como price x cantidad total en stock',
   })
   valorTotalInventario: number;
 
