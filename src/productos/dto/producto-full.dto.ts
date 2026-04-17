@@ -24,7 +24,9 @@ export class ProductoDetalleDto {
   })
   valorTotalInventario: number;
 
-  @ApiProperty({ description: 'Si el producto tiene stock disponible' })
+  @ApiProperty({
+    description: 'Si el producto tiene stock disponible en el inventario',
+  })
   tieneStock: boolean;
 
   @ApiProperty({
