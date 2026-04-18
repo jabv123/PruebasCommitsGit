@@ -15,6 +15,7 @@ import { RolModule } from './modules/rol/rol.module';
 import { AuthModule } from './auth/auth.module';
 import { UserEntity } from './usuarios/entities/usuario.entity';
 import { RoleEntity } from './modules/rol/entities/role.entitity';
+import { PedidosModule } from './pedidos/pedidos.module';
 
 @Module({
   imports: [
@@ -31,6 +32,7 @@ import { RoleEntity } from './modules/rol/entities/role.entitity';
     UsuarioModule,
     RolModule,
     AuthModule,
+    PedidosModule,
   ],
   controllers: [AppController],
   providers: [AppService, ProductosService],
